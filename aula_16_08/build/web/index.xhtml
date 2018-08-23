@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Aula 16/08/2018</title>
+    </h:head>
+    <h:body>
+
+        <h:outputText value="#{valor.a}"></h:outputText>
+        
+        <!-- Select menu -->
+        <h:form>
+            <h:selectOneMenu value="#{componenteBean.opcao}">
+                <f:selectItem itemValue="OneMenu - op1" itemLabel="OneMenu - op1"></f:selectItem>
+                <f:selectItem itemValue="OneMenu - op2" itemLabel="OneMenu - op2"></f:selectItem>
+                <f:selectItem itemValue="OneMenu - op3" itemLabel="OneMenu - op3"></f:selectItem>
+                <f:selectItem itemValue="OneMenu - op4" itemLabel="OneMenu - op4"></f:selectItem>
+                <f:selectItem itemValue="OneMenu - op5" itemLabel="OneMenu - op5"></f:selectItem>
+            </h:selectOneMenu>
+
+            <h:commandButton action="PaginaOpcoes" value="OK" />
+        </h:form>
+
+        <!-- Select radio -->
+        <h:form>
+            <h:selectOneRadio value="#{componenteBean.opcao}">
+                <f:selectItem itemValue="OneRadio - op1" itemLabel="OneRadio - op1"></f:selectItem>
+                <f:selectItem itemValue="OneRadio - op2" itemLabel="OneRadio - op2"></f:selectItem>
+                <f:selectItem itemValue="OneRadio - op3" itemLabel="OneRadio - op3"></f:selectItem>
+                <f:selectItem itemValue="OneRadio - op4" itemLabel="OneRadio - op4"></f:selectItem>
+                <f:selectItem itemValue="OneRadio - op5" itemLabel="OneRadio - op5"></f:selectItem>
+            </h:selectOneRadio>
+
+            <h:commandButton action="PaginaOpcoes" value="OK" />
+        </h:form>
+        
+        <!-- Select listbox -->
+        <h:form>
+            <h:selectOneListbox value="#{componenteBean.opcao}">
+                <f:selectItem itemValue="OneListbox - op1" itemLabel="OneListbox - op1"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op2" itemLabel="OneListbox - op2"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op3" itemLabel="OneListbox - op3"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op4" itemLabel="OneListbox - op4"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op5" itemLabel="OneListbox - op5"></f:selectItem>
+            </h:selectOneListbox>
+
+            <h:commandButton action="PaginaOpcoes" value="OK" />
+        </h:form>
+        
+        <!-- Select boolean -->
+        <h:form>
+            <h:selectBooleanCheckbox value="#{componenteBean.opcao}">
+                <f:selectItem itemValue="OneListbox - op1" itemLabel="OneListbox - op1"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op2" itemLabel="OneListbox - op2"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op3" itemLabel="OneListbox - op3"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op4" itemLabel="OneListbox - op4"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op5" itemLabel="OneListbox - op5"></f:selectItem>
+            </h:selectBooleanCheckbox>
+
+            <h:commandButton action="PaginaOpcoes" value="OK" />
+        </h:form>
+        
+        <h:dataTable value="#{componenteBean.opcoesSelecionadas}" var="elemento">
+            <h:column>
+                <h:outputText value="#{elemento}"></h:outputText>
+            </h:column>
+        </h:dataTable>
+        
+                <!-- Select listbox -->
+        <h:form>
+            <h:selectManyListbox value="#{componenteBean.opcao}">
+                <f:selectItem itemValue="OneListbox - op1" itemLabel="OneListbox - op1"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op2" itemLabel="OneListbox - op2"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op3" itemLabel="OneListbox - op3"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op4" itemLabel="OneListbox - op4"></f:selectItem>
+                <f:selectItem itemValue="OneListbox - op5" itemLabel="OneListbox - op5"></f:selectItem>
+            </h:selectManyListbox>
+
+            <h:commandButton action="PaginaOpcoes" value="OK" />
+        </h:form>
+        
+    </h:body>
+</html>
+
