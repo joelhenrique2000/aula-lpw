@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body styleClass="./css/css.css">
+
+        Olá <h:outputLabel id="nome-usuario">Joel</h:outputLabel>
+
+        <h:form id="form-cadastro">
+            <h:panelGrid columns="1">
+                <h:panelGroup>
+                    Titulo <h:inputText id="campoTitulo" value="#{cadastroBean.titulo}" />
+                </h:panelGroup>
+                <h:panelGroup>
+                    Descrição <h:inputText id="campoDescricao" value="#{cadastroBean.descricao}" />
+                </h:panelGroup>
+               <!-- <h:panelGroup>
+                    Senha: <h:inputText />
+                </h:panelGroup>
+                <h:panelGroup>
+                    mail: <h:inputText />
+                </h:panelGroup>
+                <h:panelGroup>
+                    Relatório: <h:inputTextarea></h:inputTextarea>
+                </h:panelGroup>-->
+            </h:panelGrid>
+            <h:panelGrid columnClasses="2">
+                <h:panelGroup>
+                    <h:commandButton value="Ok" action="paginaDois"/>
+                    <h:button value="Sair"/>
+                </h:panelGroup>
+            </h:panelGrid>
+        </h:form>
+            
+
+
+    </h:body>
+</html>
+
