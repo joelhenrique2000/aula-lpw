@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Formulario IFPE</title>
+    </h:head>
+    <h:body>
+       
+        <h:form>
+            <h:panelGrid columns="1">
+                <h:panelGroup>
+                    Nome: <h:inputText id="nome" value="#{formIfpeBean.nome}" />
+                </h:panelGroup>
+                <h:panelGroup>
+                    Matricula: <h:inputText id="matricula" value="#{formIfpeBean.matricula}" />
+                </h:panelGroup>
+                <h:panelGroup>
+                    Data nascimento: <h:inputText id="dataNascimento" value="#{formIfpeBean.dataNascimento}" />
+                </h:panelGroup>
+                <h:panelGroup>
+                    Turno 
+                    <h:selectOneMenu value="#{formIfpeBean.turno}">
+                        <f:selectItem itemValue="Manhã" itemLabel="Manhã"></f:selectItem>
+                        <f:selectItem itemValue="Tarde" itemLabel="Tarde"></f:selectItem>
+                        <f:selectItem itemValue="Noite" itemLabel="Noite"></f:selectItem>
+                    </h:selectOneMenu>
+                </h:panelGroup>
+                <h:panelGroup>
+                    Curso 
+                    <h:selectOneMenu value="#{formIfpeBean.curso}">
+                        <f:selectItem itemValue="TI" itemLabel="TI"></f:selectItem>
+                        <f:selectItem itemValue="TEE" itemLabel="TEE"></f:selectItem>
+                        <f:selectItem itemValue="TMA" itemLabel="TMA"></f:selectItem>
+                    </h:selectOneMenu>
+                </h:panelGroup>
+            </h:panelGrid>
+            <h:panelGrid columnClasses="2">
+                <h:panelGroup>
+                    <h:commandButton value="Ok" action="formIfpeGet"/>
+                </h:panelGroup>
+            </h:panelGrid>
+        </h:form>
+        
+    </h:body>
+</html>
+
