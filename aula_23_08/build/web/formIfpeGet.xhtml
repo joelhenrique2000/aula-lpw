@@ -6,34 +6,25 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        
-        <h:panelGrid columns="1">
-            <h:panelGroup>
-                Nome: <h:outputText value="#{formIfpeBean.estudante.nome}" />
-            </h:panelGroup>
-            <h:panelGroup>
-                Matricula: <h:outputText value="#{formIfpeBean.estudante.matricula}" />
-            </h:panelGroup>
-            <h:panelGroup>
-                Data de nascimento: <h:outputText value="#{formIfpeBean.estudante.dataNascimento}" />
-            </h:panelGroup>
-            <h:panelGroup>
-                Turno: <h:outputText value="#{formIfpeBean.turno}" />
-            </h:panelGroup>
-            <h:panelGroup>
-                Curso: <h:outputText value="#{formIfpeBean.curso}" />
-            </h:panelGroup>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Nome:" />
+            <h:outputText value="#{estudanteBeanIndex.estudante.nome}" />
+
+            <h:outputText value="Matricula:" />
+            <h:outputText value="#{estudanteBeanIndex.estudante.matricula}" />
+
+            <h:outputText value="Data de nascimento:" />
+            <h:outputText value="#{estudanteBeanIndex.estudante.dataNascimento}" />
+
+            <h:outputText value="Turno:" />
+            <h:outputText value="#{estudanteBeanIndex.turnosSelecionado}" />
+
+            <h:outputText value="Curso:" />
+            <h:outputText value="#{estudanteBeanIndex.cursoSelecionado}" />
         </h:panelGrid>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
     </h:body>
 </html>
 
