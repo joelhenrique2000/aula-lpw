@@ -8,58 +8,27 @@ package principal;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-/**
- *
- * @author 20161D12GR0542
- */
+
 @ManagedBean
 @RequestScoped
 public class FormIfpeBean {
 
-    private String nome;
-    private String matricula;
-    private String dataNascimento;
+    private Estudante estudante;
     private String turno;
     private String curso;
 
-    public FormIfpeBean(String nome, String matricula, String dataNascimento, String turno, String curso) {
-        this.nome = nome;
-        this.matricula = matricula;
-        this.dataNascimento = dataNascimento;
-        this.turno = turno;
-        this.curso = curso;
+    public FormIfpeBean() {
+        estudante = new Estudante();
+    }
+
+    public Estudante getEstudante() {
+        return estudante;
+    }
+
+    public void setEstudante(Estudante estudante) {
+        this.estudante = estudante;
     }
     
-    /**
-     * Creates a new instance of FormIfpeBean
-     */
-    public FormIfpeBean() {
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
     public String getTurno() {
         return turno;
     }
