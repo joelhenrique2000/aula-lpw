@@ -10,30 +10,10 @@
 
         <h:form>
             <h:panelGrid columns="2">
-
-                <h:outputText value="Nome:" />
-                <h:inputText id="nome" value="#{estudanteBeanIndex.estudante.nome}" />
-
-                <h:outputText value="Matricula:" />
-                <h:inputText id="matricula" value="#{estudanteBeanIndex.estudante.matricula}" />
-
-                <h:outputText value="Data de nascimento:" />
-                <h:inputText id="dataNascimento" value="#{estudanteBeanIndex.estudante.dataNascimento}" />
-
-                <h:outputText value="Turno:" />
-                <h:selectManyListbox value="#{estudanteBeanIndex.turnosSelecionado}">
-                    <f:selectItems value="#{estudanteBeanIndex.listaTurnos}" />
-                </h:selectManyListbox>
-
-                <h:outputText value="Curso:" />
-                <h:selectOneMenu id="turno" value="#{estudanteBeanIndex.cursoSelecionado}">
-                    <f:selectItems value="#{estudanteBeanIndex.listaCursos}" var="t" itemValue="#{t}" itemLabel="#{t}" />
-                </h:selectOneMenu>
-                
-                <h:commandButton value="Cadastrar estudante" action="#{estudanteBeanIndex.cadastrarEstudante()}" />
+                <h:commandButton value="Cadastrar estudante" action="cadastrarEstudante" />
                 <h:commandButton value="Visualizar estudantes" action="estudantes"/>
-                <h:commandButton value="ir cadastrar turmas" action="formIfpeGet"/>
-
+                <h:commandButton value="Cadastrar turma" action="cadastrarTurma"/>
+                <h:commandButton value="Visualizar turmas" action="listaTurma"/>
             </h:panelGrid>
         </h:form>
 

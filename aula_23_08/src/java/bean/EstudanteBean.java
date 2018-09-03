@@ -3,15 +3,13 @@ package bean;
 import java.util.ArrayList;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import principal.Estudante;
+import model.Estudante;
 
 @ManagedBean(name = "estudanteBeanIndex")
 @RequestScoped
 public class EstudanteBean {
 
-    private static ArrayList<Estudante> estudantes = new ArrayList<>();;
-    private String cursoSelecionado;
-    private ArrayList<String> turnosSelecionado;
+    private static ArrayList<Estudante> estudantes = new ArrayList<>();
     private Estudante estudante;
 
     public EstudanteBean() {
@@ -40,22 +38,6 @@ public class EstudanteBean {
         cursos.add("TMA");
 
         return cursos;
-    }
-
-    public String getCursoSelecionado() {
-        return cursoSelecionado;
-    }
-
-    public void setCursoSelecionado(String cursoSelecionado) {
-        this.cursoSelecionado = cursoSelecionado;
-    }
-
-    public ArrayList<String> getTurnosSelecionado() {
-        return turnosSelecionado;
-    }
-
-    public void setTurnosSelecionado(ArrayList<String> turnosSelecionado) {
-        this.turnosSelecionado = turnosSelecionado;
     }
 
     public Estudante getEstudante() {
