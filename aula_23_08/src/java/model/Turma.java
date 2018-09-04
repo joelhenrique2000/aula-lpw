@@ -6,6 +6,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -16,8 +17,21 @@ public class Turma {
     private String nome;
     private ArrayList<Estudante> estudantes;
 
+    private void a() {
+        String t = "";
+        
+        for(Estudante e : estudantes){
+            t += e.getNome();
+        }
+    }
+    
     public String toStringEstudantes() {
-        return this.estudantes.toArray().toString()+"f";
+        
+        String t = "";
+        
+        
+        
+        return "f";
     }
         
     
