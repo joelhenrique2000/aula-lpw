@@ -5,6 +5,7 @@
  */
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -17,24 +18,6 @@ public class Turma {
     private String nome;
     private ArrayList<Estudante> estudantes;
 
-    private void a() {
-        String t = "";
-        
-        for(Estudante e : estudantes){
-            t += e.getNome();
-        }
-    }
-    
-    public String toStringEstudantes() {
-        
-        String t = "";
-        
-        
-        
-        return "f";
-    }
-        
-    
     public String getNome() {
         return nome;
     }
@@ -50,4 +33,18 @@ public class Turma {
     public void setEstudantes(ArrayList<Estudante> estudantes) {
         this.estudantes = estudantes;
     }
+
+    
+    
+    @Override
+    public String toString() {
+        return "Turma{" + "nome=" + nome + ", estudantes=" + estudantes + '}';
+    }
+
+    
+
+    
+
+    
+    
 }

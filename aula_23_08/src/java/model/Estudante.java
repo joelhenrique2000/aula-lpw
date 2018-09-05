@@ -1,9 +1,10 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Estudante {
+public class Estudante{
     private String nome;
     private String matricula;
     private String dataNascimento;
@@ -48,6 +49,11 @@ public class Estudante {
 
     public void setTurnosSelecionado(ArrayList<String> turnosSelecionado) {
         this.turnosSelecionado = turnosSelecionado;
+    }
+
+    @Override
+    public String toString() {
+        return "nome=" + nome + ", matricula=" + matricula + '}'+"\n";
     }
     
     

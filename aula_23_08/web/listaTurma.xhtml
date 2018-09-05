@@ -23,13 +23,9 @@
                 </f:facet>
 
 
-                <ui:repeat value="#{item.estudantes.toArray()}" var="model" varStatus="status">
-                    <!--<h:outputText value="#{item.estudantes.get(status.index)}"/>
-                    -->
 
-                    <h:outputText value="#{model.matricula}" />
-                </ui:repeat>
-
+                <h:outputText value="#{item.estudantes}" />
+                
 
 
             </h:column>

@@ -15,6 +15,7 @@
                 <h:inputText id="nome" value="#{turmaBean.turma.nome}" />
                 
                 <h:outputText value="Estudantes:" />
+               
                 <h:selectManyListbox value="#{turmaBean.turma.estudantes}">
                     <f:selectItems value="#{estudanteBeanIndex.estudantes}" var="e" itemLabel="#{e.nome}" itemValue="#{estudantes}" />
                 </h:selectManyListbox>

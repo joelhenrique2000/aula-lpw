@@ -30,6 +30,18 @@
                 </f:facet>
                 #{item.dataNascimento}
             </h:column> 
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Curso" />
+                </f:facet>
+                #{item.cursoSelecionado}
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Turnos" />
+                </f:facet>
+                #{item.turnosSelecionado}
+            </h:column>
 
         </h:dataTable>
 
